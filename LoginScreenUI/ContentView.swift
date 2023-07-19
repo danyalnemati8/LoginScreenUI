@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var username = ""
+    @State private var password = ""
+    @State private var wrongUsername = 0
+    @State private var wrongPassword = 0
+    @State private var showingLoginScreen = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Color.blue
+                    
+            }
+        
         }
-        .padding()
+        .navigationBarHidden(true)
     }
 }
 
